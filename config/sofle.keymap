@@ -9,16 +9,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-/* Mainline ZMK Sofle shield override block */
-&encoder_left {
-    status = "okay";
-};
-
-&encoder_right {
-    status = "okay";
-};
-
 / {
+
+    /* Manually activate the hardware sensors directly by path */
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        status = "okay";
+    };
+
+    right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        status = "okay";
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
