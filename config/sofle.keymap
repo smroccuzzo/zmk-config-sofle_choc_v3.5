@@ -29,7 +29,7 @@
             >;
 
             // LEFT Encoder: Volume Up/Down | RIGHT Encoder: Scroll Page Up/Down
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp PG_DN PG_UP>;
         };
 
         lower_layer {
@@ -48,7 +48,7 @@
             >;
 
             // Keeps your encoders active with identical behavior when holding the LOWER layer down
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp PG_DN PG_UP>;
         };
 
         raise_layer {
@@ -67,7 +67,7 @@
             >;
 
             // Keeps your encoders active with identical behavior when holding the RAISE layer down
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
