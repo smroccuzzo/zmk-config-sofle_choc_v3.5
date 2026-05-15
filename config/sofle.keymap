@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+/* Mainline ZMK Sofle shield override block */
+&encoder_left {
+    status = "okay";
+};
+
+&encoder_right {
+    status = "okay";
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
