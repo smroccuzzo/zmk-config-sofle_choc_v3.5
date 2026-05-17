@@ -22,7 +22,7 @@
                  &kp LCTRL &kp LALT &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI  &kp RALT
             >;
 
-            /* Left Side tracking index 0, Right Side tracking index 1 */
+            /* Left side index 0, Right side index 1 */
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp PG_DN PG_UP>;
         };
 
