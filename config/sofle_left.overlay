@@ -1,3 +1,5 @@
+#include "sofle.dtsi"
+
 &left_encoder {
     status = "okay";
 };
